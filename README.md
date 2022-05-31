@@ -1,8 +1,12 @@
 # fabric-go-sdk_htlc
 本仓库为区块链可信交易构件代码。代码基于Hyperledger Fabric进行开发，实现了对跨链资产兑换交易的隐私保护、交易监管。
 
+项目代码包含两个分支：
+- main分支下的代码搭建了2个组织的fabric网络，并进行功能测试
+- 8orgs分支下的代码搭建了8个组织的fabric网络，并进行功能测试
+
 ## 1. 代码结构
-我们主要工作分以下三部分：
+项目的开发工作主要分以下三部分：
 - SDK代码的开发：./main.go中包含了使用fabric-sdk-go来搭建区块链网络的主要代码。
 
 - Fabric链码的开发：./chaincode/chaincode.go中包含了Withdraw、Lock等链码方法，这些链码方法会进一步调用密码学API实现对应的功能：
@@ -119,5 +123,4 @@
 ```
 ./monitordocker.sh fixtures_test
 ```
-### 2.2 增添网络组织数
 
