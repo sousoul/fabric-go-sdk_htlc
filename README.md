@@ -6,5 +6,91 @@ chaincode目录下为链码，其中链码方法在
 
 
 
+
+
+```
+.
+
+├── README.md
+
+├── chaincode
+
+│  ├── chaincode.go
+
+│  ├── go.mod
+
+│  ├── go.sum
+
+│  ├── htlc.go
+
+│  ├── htlc_backup.go
+
+│  ├── protobuf
+
+│  ├── protobuf_wo_bulletproof
+
+│  └── vendor
+
+├── config.yaml
+
+├── config_8orgs.yaml
+
+├── fabric-go-sdk
+
+├── fixtures
+
+│  ├── channel-artifacts
+
+│  ├── configtx.yaml
+
+│  ├── create_fixtures.sh
+
+│  ├── crypto-config
+
+│  ├── crypto-config.yaml
+
+│  └── docker-compose.yaml
+
+├── fixtures_8orgs
+
+│  ├── channel-artifacts
+
+│  ├── configtx.yaml
+
+│  ├── create_fixtures.sh
+
+│  ├── crypto-config
+
+│  ├── crypto-config.yaml
+
+│  └── docker-compose.yaml
+
+├── go.mod
+
+├── go.sum
+
+├── main.go
+
+├── monitordocker.sh
+
+├── restart_network.sh
+
+└── sdkInit
+
+  ├── generateSkPk.go
+
+  ├── get.go
+
+  ├── integration.go
+
+  ├── sdkInfo.go
+
+  ├── sdkSetting.go
+
+  └── set.go
+```
+
+
+
 ## 代码使用
 ./restart_network.sh 
