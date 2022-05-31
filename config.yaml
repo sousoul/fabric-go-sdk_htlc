@@ -74,41 +74,41 @@ channels:
         ledgerQuery: true
         eventSource: true
 
-#      peer0.org3.example.com:
-#        endorsingPeer: true
-#        chaincodeQuery: true
-#        ledgerQuery: true
-#        eventSource: true
-#
-#      peer0.org4.example.com:
-#        endorsingPeer: true
-#        chaincodeQuery: true
-#        ledgerQuery: true
-#        eventSource: true
-#
-#      peer0.org5.example.com:
-#        endorsingPeer: true
-#        chaincodeQuery: true
-#        ledgerQuery: true
-#        eventSource: true
-#
-#      peer0.org6.example.com:
-#        endorsingPeer: true
-#        chaincodeQuery: true
-#        ledgerQuery: true
-#        eventSource: true
-#
-#      peer0.org7.example.com:
-#        endorsingPeer: true
-#        chaincodeQuery: true
-#        ledgerQuery: true
-#        eventSource: true
-#
-#      peer0.org8.example.com:
-#        endorsingPeer: true
-#        chaincodeQuery: true
-#        ledgerQuery: true
-#        eventSource: true
+      peer0.org3.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+      peer0.org4.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+      peer0.org5.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+      peer0.org6.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+      peer0.org7.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+      peer0.org8.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
 
     policies:
       queryChannelConfig:
@@ -148,41 +148,41 @@ channels:
         ledgerQuery: true
         eventSource: true
 
-#      peer0.org3.example.com:
-#        endorsingPeer: true
-#        chaincodeQuery: true
-#        ledgerQuery: true
-#        eventSource: true
-#
-#      peer0.org4.example.com:
-#        endorsingPeer: true
-#        chaincodeQuery: true
-#        ledgerQuery: true
-#        eventSource: true
-#
-#      peer0.org5.example.com:
-#        endorsingPeer: true
-#        chaincodeQuery: true
-#        ledgerQuery: true
-#        eventSource: true
-#
-#      peer0.org6.example.com:
-#        endorsingPeer: true
-#        chaincodeQuery: true
-#        ledgerQuery: true
-#        eventSource: true
-#
-#      peer0.org7.example.com:
-#        endorsingPeer: true
-#        chaincodeQuery: true
-#        ledgerQuery: true
-#        eventSource: true
-#
-#      peer0.org8.example.com:
-#        endorsingPeer: true
-#        chaincodeQuery: true
-#        ledgerQuery: true
-#        eventSource: true
+      peer0.org3.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+      peer0.org4.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+      peer0.org5.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+      peer0.org6.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+      peer0.org7.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
+
+      peer0.org8.example.com:
+        endorsingPeer: true
+        chaincodeQuery: true
+        ledgerQuery: true
+        eventSource: true
 
     policies:
       queryChannelConfig:
@@ -217,59 +217,59 @@ organizations:
       - peer0.org2.example.com
       - peer1.org2.example.com
 
-#  org3:
-#    mspid: Org3MSP
-#
-#    # This org's MSP store (absolute path or relative to client.cryptoconfig)
-#    cryptoPath:  peerOrganizations/org3.example.com/users/{username}@org3.example.com/msp
-#
-#    peers:
-#      - peer0.org3.example.com
-#
-#  org4:
-#    mspid: Org4MSP
-#
-#    # This org's MSP store (absolute path or relative to client.cryptoconfig)
-#    cryptoPath:  peerOrganizations/org4.example.com/users/{username}@org4.example.com/msp
-#
-#    peers:
-#      - peer0.org4.example.com
-#
-#  org5:
-#    mspid: Org5MSP
-#
-#    # This org's MSP store (absolute path or relative to client.cryptoconfig)
-#    cryptoPath: peerOrganizations/org5.example.com/users/{username}@org5.example.com/msp
-#
-#    peers:
-#      - peer0.org5.example.com
-#
-#  org6:
-#    mspid: Org6MSP
-#
-#    # This org's MSP store (absolute path or relative to client.cryptoconfig)
-#    cryptoPath: peerOrganizations/org6.example.com/users/{username}@org6.example.com/msp
-#
-#    peers:
-#      - peer0.org6.example.com
-#
-#  org7:
-#    mspid: Org7MSP
-#
-#    # This org's MSP store (absolute path or relative to client.cryptoconfig)
-#    cryptoPath: peerOrganizations/org7.example.com/users/{username}@org7.example.com/msp
-#
-#    peers:
-#      - peer0.org7.example.com
-#
-#  org8:
-#    mspid: Org8MSP
-#
-#    # This org's MSP store (absolute path or relative to client.cryptoconfig)
-#    cryptoPath: peerOrganizations/org8.example.com/users/{username}@org8.example.com/msp
-#
-#    peers:
-#      - peer0.org8.example.com
+  org3:
+    mspid: Org3MSP
+
+    # This org's MSP store (absolute path or relative to client.cryptoconfig)
+    cryptoPath:  peerOrganizations/org3.example.com/users/{username}@org3.example.com/msp
+
+    peers:
+      - peer0.org3.example.com
+
+  org4:
+    mspid: Org4MSP
+
+    # This org's MSP store (absolute path or relative to client.cryptoconfig)
+    cryptoPath:  peerOrganizations/org4.example.com/users/{username}@org4.example.com/msp
+
+    peers:
+      - peer0.org4.example.com
+
+  org5:
+    mspid: Org5MSP
+
+    # This org's MSP store (absolute path or relative to client.cryptoconfig)
+    cryptoPath: peerOrganizations/org5.example.com/users/{username}@org5.example.com/msp
+
+    peers:
+      - peer0.org5.example.com
+
+  org6:
+    mspid: Org6MSP
+
+    # This org's MSP store (absolute path or relative to client.cryptoconfig)
+    cryptoPath: peerOrganizations/org6.example.com/users/{username}@org6.example.com/msp
+
+    peers:
+      - peer0.org6.example.com
+
+  org7:
+    mspid: Org7MSP
+
+    # This org's MSP store (absolute path or relative to client.cryptoconfig)
+    cryptoPath: peerOrganizations/org7.example.com/users/{username}@org7.example.com/msp
+
+    peers:
+      - peer0.org7.example.com
+
+  org8:
+    mspid: Org8MSP
+
+    # This org's MSP store (absolute path or relative to client.cryptoconfig)
+    cryptoPath: peerOrganizations/org8.example.com/users/{username}@org8.example.com/msp
+
+    peers:
+      - peer0.org8.example.com
 
 
     # [Optional]. Certificate Authorities issue certificates for identification purposes in a Fabric based
@@ -424,137 +424,137 @@ peers:
     tlsCACerts:
       path: ./fixtures/crypto-config/peerOrganizations/org2.example.com/tlsca/tlsca.org2.example.com-cert.pem
 
-#  peer0.org3.example.com:
-#    # this URL is used to send endorsement and query requests
-#    # [Optional] Default: Infer from hostname
-#    url: peer0.org3.example.com:11051
-#    grpcOptions:
-#      ssl-target-name-override: peer0.org3.example.com
-#      # These parameters should be set in coordination with the keepalive policy on the server,
-#      # as incompatible settings can result in closing of connection.
-#      # When duration of the 'keep-alive-time' is set to 0 or less the keep alive client parameters are disabled
-#      keep-alive-time: 0s
-#      keep-alive-timeout: 20s
-#      keep-alive-permit: false
-#      fail-fast: false
-#      # allow-insecure will be taken into consideration if address has no protocol defined, if true then grpc or else grpcs
-#      allow-insecure: false
-#    #grpcOptions:
-#    #  ssl-target-name-override: peer0.org1.example.com
-#
-#    tlsCACerts:
-#      # Certificate location absolute path
-#      path: ./fixtures/crypto-config/peerOrganizations/org3.example.com/tlsca/tlsca.org3.example.com-cert.pem
-#
-#  peer0.org4.example.com:
-#    # this URL is used to send endorsement and query requests
-#    # [Optional] Default: Infer from hostname
-#    url: peer0.org4.example.com:12051
-#    grpcOptions:
-#      ssl-target-name-override: peer0.org4.example.com
-#      # These parameters should be set in coordination with the keepalive policy on the server,
-#      # as incompatible settings can result in closing of connection.
-#      # When duration of the 'keep-alive-time' is set to 0 or less the keep alive client parameters are disabled
-#      keep-alive-time: 0s
-#      keep-alive-timeout: 20s
-#      keep-alive-permit: false
-#      fail-fast: false
-#      # allow-insecure will be taken into consideration if address has no protocol defined, if true then grpc or else grpcs
-#      allow-insecure: false
-#    #grpcOptions:
-#    #  ssl-target-name-override: peer0.org1.example.com
-#
-#    tlsCACerts:
-#      # Certificate location absolute path
-#      path: ./fixtures/crypto-config/peerOrganizations/org4.example.com/tlsca/tlsca.org4.example.com-cert.pem
-#
-#  peer0.org5.example.com:
-#    # this URL is used to send endorsement and query requests
-#    # [Optional] Default: Infer from hostname
-#    url: peer0.org5.example.com:13051
-#    grpcOptions:
-#      ssl-target-name-override: peer0.org5.example.com
-#      # These parameters should be set in coordination with the keepalive policy on the server,
-#      # as incompatible settings can result in closing of connection.
-#      # When duration of the 'keep-alive-time' is set to 0 or less the keep alive client parameters are disabled
-#      keep-alive-time: 0s
-#      keep-alive-timeout: 20s
-#      keep-alive-permit: false
-#      fail-fast: false
-#      # allow-insecure will be taken into consideration if address has no protocol defined, if true then grpc or else grpcs
-#      allow-insecure: false
-#    #grpcOptions:
-#    #  ssl-target-name-override: peer0.org1.example.com
-#
-#    tlsCACerts:
-#      # Certificate location absolute path
-#      path: ./fixtures/crypto-config/peerOrganizations/org5.example.com/tlsca/tlsca.org5.example.com-cert.pem
-#
-#  peer0.org6.example.com:
-#    # this URL is used to send endorsement and query requests
-#    # [Optional] Default: Infer from hostname
-#    url: peer0.org6.example.com:14051
-#    grpcOptions:
-#      ssl-target-name-override: peer0.org6.example.com
-#      # These parameters should be set in coordination with the keepalive policy on the server,
-#      # as incompatible settings can result in closing of connection.
-#      # When duration of the 'keep-alive-time' is set to 0 or less the keep alive client parameters are disabled
-#      keep-alive-time: 0s
-#      keep-alive-timeout: 20s
-#      keep-alive-permit: false
-#      fail-fast: false
-#      # allow-insecure will be taken into consideration if address has no protocol defined, if true then grpc or else grpcs
-#      allow-insecure: false
-#    #grpcOptions:
-#    #  ssl-target-name-override: peer0.org1.example.com
-#
-#    tlsCACerts:
-#      # Certificate location absolute path
-#      path: ./fixtures/crypto-config/peerOrganizations/org6.example.com/tlsca/tlsca.org6.example.com-cert.pem
-#
-#  peer0.org7.example.com:
-#    # this URL is used to send endorsement and query requests
-#    # [Optional] Default: Infer from hostname
-#    url: peer0.org7.example.com:15051
-#    grpcOptions:
-#      ssl-target-name-override: peer0.org7.example.com
-#      # These parameters should be set in coordination with the keepalive policy on the server,
-#      # as incompatible settings can result in closing of connection.
-#      # When duration of the 'keep-alive-time' is set to 0 or less the keep alive client parameters are disabled
-#      keep-alive-time: 0s
-#      keep-alive-timeout: 20s
-#      keep-alive-permit: false
-#      fail-fast: false
-#      # allow-insecure will be taken into consideration if address has no protocol defined, if true then grpc or else grpcs
-#      allow-insecure: false
-#    #grpcOptions:
-#    #  ssl-target-name-override: peer0.org1.example.com
-#
-#    tlsCACerts:
-#      # Certificate location absolute path
-#      path: ./fixtures/crypto-config/peerOrganizations/org7.example.com/tlsca/tlsca.org7.example.com-cert.pem
-#
-#  peer0.org8.example.com:
-#    # this URL is used to send endorsement and query requests
-#    # [Optional] Default: Infer from hostname
-#    url: peer0.org8.example.com:16051
-#    grpcOptions:
-#      ssl-target-name-override: peer0.org8.example.com
-#      # These parameters should be set in coordination with the keepalive policy on the server,
-#      # as incompatible settings can result in closing of connection.
-#      # When duration of the 'keep-alive-time' is set to 0 or less the keep alive client parameters are disabled
-#      keep-alive-time: 0s
-#      keep-alive-timeout: 20s
-#      keep-alive-permit: false
-#      fail-fast: false
-#      # allow-insecure will be taken into consideration if address has no protocol defined, if true then grpc or else grpcs
-#      allow-insecure: false
-#    #grpcOptions:
-#    #  ssl-target-name-override: peer0.org1.example.com
-#
-#    tlsCACerts:
-#      # Certificate location absolute path
-#      path: ./fixtures/crypto-config/peerOrganizations/org8.example.com/tlsca/tlsca.org8.example.com-cert.pem
+  peer0.org3.example.com:
+    # this URL is used to send endorsement and query requests
+    # [Optional] Default: Infer from hostname
+    url: peer0.org3.example.com:11051
+    grpcOptions:
+      ssl-target-name-override: peer0.org3.example.com
+      # These parameters should be set in coordination with the keepalive policy on the server,
+      # as incompatible settings can result in closing of connection.
+      # When duration of the 'keep-alive-time' is set to 0 or less the keep alive client parameters are disabled
+      keep-alive-time: 0s
+      keep-alive-timeout: 20s
+      keep-alive-permit: false
+      fail-fast: false
+      # allow-insecure will be taken into consideration if address has no protocol defined, if true then grpc or else grpcs
+      allow-insecure: false
+    #grpcOptions:
+    #  ssl-target-name-override: peer0.org1.example.com
+
+    tlsCACerts:
+      # Certificate location absolute path
+      path: ./fixtures/crypto-config/peerOrganizations/org3.example.com/tlsca/tlsca.org3.example.com-cert.pem
+
+  peer0.org4.example.com:
+    # this URL is used to send endorsement and query requests
+    # [Optional] Default: Infer from hostname
+    url: peer0.org4.example.com:12051
+    grpcOptions:
+      ssl-target-name-override: peer0.org4.example.com
+      # These parameters should be set in coordination with the keepalive policy on the server,
+      # as incompatible settings can result in closing of connection.
+      # When duration of the 'keep-alive-time' is set to 0 or less the keep alive client parameters are disabled
+      keep-alive-time: 0s
+      keep-alive-timeout: 20s
+      keep-alive-permit: false
+      fail-fast: false
+      # allow-insecure will be taken into consideration if address has no protocol defined, if true then grpc or else grpcs
+      allow-insecure: false
+    #grpcOptions:
+    #  ssl-target-name-override: peer0.org1.example.com
+
+    tlsCACerts:
+      # Certificate location absolute path
+      path: ./fixtures/crypto-config/peerOrganizations/org4.example.com/tlsca/tlsca.org4.example.com-cert.pem
+
+  peer0.org5.example.com:
+    # this URL is used to send endorsement and query requests
+    # [Optional] Default: Infer from hostname
+    url: peer0.org5.example.com:13051
+    grpcOptions:
+      ssl-target-name-override: peer0.org5.example.com
+      # These parameters should be set in coordination with the keepalive policy on the server,
+      # as incompatible settings can result in closing of connection.
+      # When duration of the 'keep-alive-time' is set to 0 or less the keep alive client parameters are disabled
+      keep-alive-time: 0s
+      keep-alive-timeout: 20s
+      keep-alive-permit: false
+      fail-fast: false
+      # allow-insecure will be taken into consideration if address has no protocol defined, if true then grpc or else grpcs
+      allow-insecure: false
+    #grpcOptions:
+    #  ssl-target-name-override: peer0.org1.example.com
+
+    tlsCACerts:
+      # Certificate location absolute path
+      path: ./fixtures/crypto-config/peerOrganizations/org5.example.com/tlsca/tlsca.org5.example.com-cert.pem
+
+  peer0.org6.example.com:
+    # this URL is used to send endorsement and query requests
+    # [Optional] Default: Infer from hostname
+    url: peer0.org6.example.com:14051
+    grpcOptions:
+      ssl-target-name-override: peer0.org6.example.com
+      # These parameters should be set in coordination with the keepalive policy on the server,
+      # as incompatible settings can result in closing of connection.
+      # When duration of the 'keep-alive-time' is set to 0 or less the keep alive client parameters are disabled
+      keep-alive-time: 0s
+      keep-alive-timeout: 20s
+      keep-alive-permit: false
+      fail-fast: false
+      # allow-insecure will be taken into consideration if address has no protocol defined, if true then grpc or else grpcs
+      allow-insecure: false
+    #grpcOptions:
+    #  ssl-target-name-override: peer0.org1.example.com
+
+    tlsCACerts:
+      # Certificate location absolute path
+      path: ./fixtures/crypto-config/peerOrganizations/org6.example.com/tlsca/tlsca.org6.example.com-cert.pem
+
+  peer0.org7.example.com:
+    # this URL is used to send endorsement and query requests
+    # [Optional] Default: Infer from hostname
+    url: peer0.org7.example.com:15051
+    grpcOptions:
+      ssl-target-name-override: peer0.org7.example.com
+      # These parameters should be set in coordination with the keepalive policy on the server,
+      # as incompatible settings can result in closing of connection.
+      # When duration of the 'keep-alive-time' is set to 0 or less the keep alive client parameters are disabled
+      keep-alive-time: 0s
+      keep-alive-timeout: 20s
+      keep-alive-permit: false
+      fail-fast: false
+      # allow-insecure will be taken into consideration if address has no protocol defined, if true then grpc or else grpcs
+      allow-insecure: false
+    #grpcOptions:
+    #  ssl-target-name-override: peer0.org1.example.com
+
+    tlsCACerts:
+      # Certificate location absolute path
+      path: ./fixtures/crypto-config/peerOrganizations/org7.example.com/tlsca/tlsca.org7.example.com-cert.pem
+
+  peer0.org8.example.com:
+    # this URL is used to send endorsement and query requests
+    # [Optional] Default: Infer from hostname
+    url: peer0.org8.example.com:16051
+    grpcOptions:
+      ssl-target-name-override: peer0.org8.example.com
+      # These parameters should be set in coordination with the keepalive policy on the server,
+      # as incompatible settings can result in closing of connection.
+      # When duration of the 'keep-alive-time' is set to 0 or less the keep alive client parameters are disabled
+      keep-alive-time: 0s
+      keep-alive-timeout: 20s
+      keep-alive-permit: false
+      fail-fast: false
+      # allow-insecure will be taken into consideration if address has no protocol defined, if true then grpc or else grpcs
+      allow-insecure: false
+    #grpcOptions:
+    #  ssl-target-name-override: peer0.org1.example.com
+
+    tlsCACerts:
+      # Certificate location absolute path
+      path: ./fixtures/crypto-config/peerOrganizations/org8.example.com/tlsca/tlsca.org8.example.com-cert.pem
 
 #
 # Fabric-CA is a special kind of Certificate Authority provided by Hyperledger Fabric which allows
@@ -574,32 +574,32 @@ entityMatchers:
       sslTargetOverrideUrlSubstitutionExp: ${1}.org2.example.com
       mappedHost: peer0.org2.example.com
 
-#    - pattern: (\w+).org3.example.com:(\d+)
-#      urlSubstitutionExp: ${1}.org3.example.com:${2}
-#      sslTargetOverrideUrlSubstitutionExp: ${1}.org3.example.com
-#      mappedHost: peer0.org3.example.com
-#
-#    - pattern: (\w+).org4.example.com:(\d+)
-#      urlSubstitutionExp: ${1}.org4.example.com:${2}
-#      sslTargetOverrideUrlSubstitutionExp: ${1}.org4.example.com
-#      mappedHost: peer0.org4.example.com
-#
-#    - pattern: (\w+).org5.example.com:(\d+)
-#      urlSubstitutionExp: ${1}.org5.example.com:${2}
-#      sslTargetOverrideUrlSubstitutionExp: ${1}.org5.example.com
-#      mappedHost: peer0.org5.example.com
-#
-#    - pattern: (\w+).org6.example.com:(\d+)
-#      urlSubstitutionExp: ${1}.org6.example.com:${2}
-#      sslTargetOverrideUrlSubstitutionExp: ${1}.org6.example.com
-#      mappedHost: peer0.org6.example.com
-#
-#    - pattern: (\w+).org7.example.com:(\d+)
-#      urlSubstitutionExp: ${1}.org7.example.com:${2}
-#      sslTargetOverrideUrlSubstitutionExp: ${1}.org7.example.com
-#      mappedHost: peer0.org7.example.com
-#
-#    - pattern: (\w+).org8.example.com:(\d+)
-#      urlSubstitutionExp: ${1}.org8.example.com:${2}
-#      sslTargetOverrideUrlSubstitutionExp: ${1}.org8.example.com
-#      mappedHost: peer0.org8.example.com
+    - pattern: (\w+).org3.example.com:(\d+)
+      urlSubstitutionExp: ${1}.org3.example.com:${2}
+      sslTargetOverrideUrlSubstitutionExp: ${1}.org3.example.com
+      mappedHost: peer0.org3.example.com
+
+    - pattern: (\w+).org4.example.com:(\d+)
+      urlSubstitutionExp: ${1}.org4.example.com:${2}
+      sslTargetOverrideUrlSubstitutionExp: ${1}.org4.example.com
+      mappedHost: peer0.org4.example.com
+
+    - pattern: (\w+).org5.example.com:(\d+)
+      urlSubstitutionExp: ${1}.org5.example.com:${2}
+      sslTargetOverrideUrlSubstitutionExp: ${1}.org5.example.com
+      mappedHost: peer0.org5.example.com
+
+    - pattern: (\w+).org6.example.com:(\d+)
+      urlSubstitutionExp: ${1}.org6.example.com:${2}
+      sslTargetOverrideUrlSubstitutionExp: ${1}.org6.example.com
+      mappedHost: peer0.org6.example.com
+
+    - pattern: (\w+).org7.example.com:(\d+)
+      urlSubstitutionExp: ${1}.org7.example.com:${2}
+      sslTargetOverrideUrlSubstitutionExp: ${1}.org7.example.com
+      mappedHost: peer0.org7.example.com
+
+    - pattern: (\w+).org8.example.com:(\d+)
+      urlSubstitutionExp: ${1}.org8.example.com:${2}
+      sslTargetOverrideUrlSubstitutionExp: ${1}.org8.example.com
+      mappedHost: peer0.org8.example.com

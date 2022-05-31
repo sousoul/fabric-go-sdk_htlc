@@ -162,23 +162,23 @@ func VerifyTwo(receiverIdx int, txKey string, channel_idx, org_idx int)  {
 	fmt.Println(fmt.Sprintf(">> Tx%v|Org%d对链%d进行阶段2验证：%s",txKey, org_idx+1, channel_idx+1, ret))
 }
 
-//// 验证所有组织的证明
-//func VerifyTwoAll(txKey string, channel_idx int)  {
-//	for i:=0;i<privateLedger.orgNum;i++{
-//		go VerifyTwo(i, txKey, channel_idx, i)
-//	}
-//}
-
-// receiverIdx充当监管者，验证所有组织的证明
-func VerifyTwoAll(receiverIdx int, txKey string, channel_idx int)  {
-	i := receiverIdx
-	args := []string{"validationStep2All", txKey, strconv.Itoa(privateLedger.orgNum)}
-	ret, err := App.Set(args, channel_idx, i)
-	if err != nil {
-		fmt.Println(err)
+// 验证所有组织的证明
+func VerifyTwoAll(txKey string, channel_idx int)  {
+	for i:=0;i<privateLedger.orgNum;i++{
+		go VerifyTwo(i, txKey, channel_idx, i)
 	}
-	fmt.Println(fmt.Sprintf(">> Tx%v|Org%d对链%d进行阶段2验证：%s",txKey, i+1, channel_idx+1, ret))
 }
+
+//// receiverIdx充当监管者，验证所有组织的证明
+//func VerifyTwoAll(receiverIdx int, txKey string, channel_idx int)  {
+//	i := receiverIdx
+//	args := []string{"validationStep2All", txKey, strconv.Itoa(privateLedger.orgNum)}
+//	ret, err := App.Set(args, channel_idx, i)
+//	if err != nil {
+//		fmt.Println(err)
+//	}
+//	fmt.Println(fmt.Sprintf(">> Tx%v|Org%d对链%d进行阶段2验证：%s",txKey, i+1, channel_idx+1, ret))
+//}
 
 // 根据订阅到的event决定调用哪个函数
 func FilteredBlockListenerSelect(ec *event.Client, listenerTag string, channelIdx int, orgIdx int) fabAPI.Registration {
@@ -318,54 +318,54 @@ func main() {
 			OrgPeerNum:    2,
 			OrgAnchorFile: []string{"./fixtures/channel-artifacts/Org2MSPanchors1.tx", "./fixtures/channel-artifacts/Org2MSPanchors2.tx"}, // 锚节点
 		},
-		//{
-		//	OrgAdminUser:  "Admin",
-		//	OrgName:       "Org3",
-		//	OrgMspId:      "Org3MSP",
-		//	OrgUser:       "User1",
-		//	OrgPeerNum:    1,
-		//	OrgAnchorFile: []string{"./fixtures/channel-artifacts/Org3MSPanchors1.tx", "./fixtures/channel-artifacts/Org3MSPanchors2.tx"}, // 锚节点
-		//},
-		//{
-		//	OrgAdminUser:  "Admin",
-		//	OrgName:       "Org4",
-		//	OrgMspId:      "Org4MSP",
-		//	OrgUser:       "User1",
-		//	OrgPeerNum:    1,
-		//	OrgAnchorFile: []string{"./fixtures/channel-artifacts/Org4MSPanchors1.tx", "./fixtures/channel-artifacts/Org4MSPanchors2.tx"}, // 锚节点
-		//},
-		//{
-		//	OrgAdminUser:  "Admin",
-		//	OrgName:       "Org5",
-		//	OrgMspId:      "Org5MSP",
-		//	OrgUser:       "User1",
-		//	OrgPeerNum:    1,
-		//	OrgAnchorFile: []string{"./fixtures/channel-artifacts/Org5MSPanchors1.tx", "./fixtures/channel-artifacts/Org5MSPanchors2.tx"}, // 锚节点
-		//},
-		//{
-		//	OrgAdminUser:  "Admin",
-		//	OrgName:       "Org6",
-		//	OrgMspId:      "Org6MSP",
-		//	OrgUser:       "User1",
-		//	OrgPeerNum:    1,
-		//	OrgAnchorFile: []string{"./fixtures/channel-artifacts/Org6MSPanchors1.tx", "./fixtures/channel-artifacts/Org6MSPanchors2.tx"}, // 锚节点
-		//},
-		//{
-		//	OrgAdminUser:  "Admin",
-		//	OrgName:       "Org7",
-		//	OrgMspId:      "Org7MSP",
-		//	OrgUser:       "User1",
-		//	OrgPeerNum:    1,
-		//	OrgAnchorFile: []string{"./fixtures/channel-artifacts/Org7MSPanchors1.tx", "./fixtures/channel-artifacts/Org7MSPanchors2.tx"}, // 锚节点
-		//},
-		//{
-		//	OrgAdminUser:  "Admin",
-		//	OrgName:       "Org8",
-		//	OrgMspId:      "Org8MSP",
-		//	OrgUser:       "User1",
-		//	OrgPeerNum:    1,
-		//	OrgAnchorFile: []string{"./fixtures/channel-artifacts/Org8MSPanchors1.tx", "./fixtures/channel-artifacts/Org8MSPanchors2.tx"}, // 锚节点
-		//},
+		{
+			OrgAdminUser:  "Admin",
+			OrgName:       "Org3",
+			OrgMspId:      "Org3MSP",
+			OrgUser:       "User1",
+			OrgPeerNum:    1,
+			OrgAnchorFile: []string{"./fixtures/channel-artifacts/Org3MSPanchors1.tx", "./fixtures/channel-artifacts/Org3MSPanchors2.tx"}, // 锚节点
+		},
+		{
+			OrgAdminUser:  "Admin",
+			OrgName:       "Org4",
+			OrgMspId:      "Org4MSP",
+			OrgUser:       "User1",
+			OrgPeerNum:    1,
+			OrgAnchorFile: []string{"./fixtures/channel-artifacts/Org4MSPanchors1.tx", "./fixtures/channel-artifacts/Org4MSPanchors2.tx"}, // 锚节点
+		},
+		{
+			OrgAdminUser:  "Admin",
+			OrgName:       "Org5",
+			OrgMspId:      "Org5MSP",
+			OrgUser:       "User1",
+			OrgPeerNum:    1,
+			OrgAnchorFile: []string{"./fixtures/channel-artifacts/Org5MSPanchors1.tx", "./fixtures/channel-artifacts/Org5MSPanchors2.tx"}, // 锚节点
+		},
+		{
+			OrgAdminUser:  "Admin",
+			OrgName:       "Org6",
+			OrgMspId:      "Org6MSP",
+			OrgUser:       "User1",
+			OrgPeerNum:    1,
+			OrgAnchorFile: []string{"./fixtures/channel-artifacts/Org6MSPanchors1.tx", "./fixtures/channel-artifacts/Org6MSPanchors2.tx"}, // 锚节点
+		},
+		{
+			OrgAdminUser:  "Admin",
+			OrgName:       "Org7",
+			OrgMspId:      "Org7MSP",
+			OrgUser:       "User1",
+			OrgPeerNum:    1,
+			OrgAnchorFile: []string{"./fixtures/channel-artifacts/Org7MSPanchors1.tx", "./fixtures/channel-artifacts/Org7MSPanchors2.tx"}, // 锚节点
+		},
+		{
+			OrgAdminUser:  "Admin",
+			OrgName:       "Org8",
+			OrgMspId:      "Org8MSP",
+			OrgUser:       "User1",
+			OrgPeerNum:    1,
+			OrgAnchorFile: []string{"./fixtures/channel-artifacts/Org8MSPanchors1.tx", "./fixtures/channel-artifacts/Org8MSPanchors2.tx"}, // 锚节点
+		},
 	}
 
 	// init sdk env info
@@ -634,10 +634,12 @@ func main() {
 	//VerifyTwo(receiverIdx2, txKey, 1, receiverIdx2) // chain2上的接收方Org1，验证证明
 
 	Audit(orgPkSk, orgNum, txSpe.R, spenderIdx1, receiverIdx1, asset1[spenderIdx1]-value1, value1, 0, txKey)
-	VerifyTwoAll(receiverIdx1, txKey, 0) // 验证chain1证明
+	//VerifyTwoAll(receiverIdx1, txKey, 0) // 验证chain1证明
+	VerifyTwoAll(txKey, 0) // 验证chain1证明
 
 	Audit(orgPkSk, orgNum, txSpe2.R, spenderIdx2, receiverIdx2, asset2[spenderIdx2]-value2, value2, 1, txKey) // 注意要传入的R与交易时的R一致
-	VerifyTwoAll(receiverIdx2, txKey, 1) // 验证chain1证明
+	//VerifyTwoAll(receiverIdx2, txKey, 1) // 验证chain1证明
+	VerifyTwoAll(txKey, 0) // 验证chain1证明
 
 	fmt.Println("两条链上的范围证明、析取证明均验证通过，跨链交易通过监管")
 	fmt.Println("<------------------------------------ 结束　------------------------------------>")
@@ -923,7 +925,9 @@ func verifytwoall(contex *gin.Context) {
 	channel_idxString := requestInfo["channel_idx"].(string)
 	channel_idx, err := strconv.Atoi(channel_idxString)
 
-	VerifyTwoAll(receiverIdx, txKey, channel_idx) // Org2验证chain1的证明
+	//VerifyTwoAll(receiverIdx, txKey, channel_idx) // Org2验证chain1的证明
+	_ = receiverIdx
+	VerifyTwoAll(txKey, channel_idx) // Org2验证chain1的证明
 
 	if err != nil {
 		contex.JSON(102, gin.H{
