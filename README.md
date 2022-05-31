@@ -39,11 +39,7 @@
 
 │  ├── htlc.go 
 
-│  ├── htlc_backup.go
-
 │  ├── protobuf // 二维账本
-
-│  ├── protobuf_wo_bulletproof
 
 │  └── vendor // 链码依赖
 
