@@ -103,13 +103,19 @@
 ```
 
 ## 代码使用
-启动各节点容器，编译sdk代码生成可执行文件。
+启动各节点容器，编译sdk代码生成可执行文件：
 ```bash
 ./restart_network.sh
 ```
-执行可执行文件，搭建区块链网络并模拟执行一笔跨链交易。
+执行可执行文件，搭建区块链网络并模拟执行一笔跨链交易：
 
 ```shell
 ./fabric-go-sdk 
+```
+
+此外，可在另一终端执行monitordocker.sh，监听各个容器输出的日志：
+
+```
+./monitordocker.sh fixtures_test
 ```
 
