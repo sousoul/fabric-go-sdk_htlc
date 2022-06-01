@@ -108,7 +108,15 @@
 
 ## 2. 代码使用
 ### 2.1 测试代码运行
-启动各节点容器，编译sdk代码生成可执行文件：
+克隆代码仓库
+```
+git clone git@github.com:sousoul/fabric-go-sdk_htlc.git
+```
+进入项目根目录
+```
+cd fabric-go-sdk_htlc/
+```
+执行脚本，启动各节点容器并编译sdk代码生成可执行文件：
 ```bash
 ./restart_network.sh
 ```
