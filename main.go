@@ -434,7 +434,6 @@ func main() {
 				fmt.Println("InitService successful")
 				os.Exit(-1)
 			}
-			//fmt.Println(info.Client[i][j]) //
 		}
 	}
 
@@ -460,22 +459,19 @@ func main() {
 
 	args := []string{"read_from_ledger", "二维账本第一行"}
 	ret, err := App.Set(args, 1, 1)
-	//response, err = App.Get(e) 到底是用set还是用get
 	if err != nil {
 		fmt.Println(err)
 	}
 	fmt.Println("<--- 读取账本函数read_from_ledger测试　--->：", ret)
 
 	// 初始化余额
-	//asset1 := [2]int64 {100, 100} // 初始化数组长度只能用常量
-	//asset2 := [2]int64 {200, 200}
 	asset1 := []int64{}
 	for i:=0;i<orgNum;i++{
-		asset1 = append(asset1, 10000000) // 所有组织在链1上的初始资产均为1000
+		asset1 = append(asset1, 10000000) // 所有组织在链1上的初始资产均为10000000
 	}
 	asset2 := []int64{}
 	for i:=0;i<orgNum;i++{
-		asset2 = append(asset2, 10000000) // 所有组织在链2上的初始资产均为2000
+		asset2 = append(asset2, 10000000) // 所有组织在链2上的初始资产均为10000000
 	}
 	fmt.Println("asset1", asset1)
 	fmt.Println("asset2", asset2)
@@ -538,44 +534,6 @@ func main() {
 	//fmt.Println("<--------------------------------------------------->")
 	//
 	//time.Sleep(time.Hour * 2400)
-
-
-
-
-	// Org2调用channel1的链码
-	//a:=[]string{"set","资产ID","---------------------"}
-	//txid, err := App.Set(a, 0, 1)
-	//if err != nil {
-	//	fmt.Println(err)
-	//}
-	//fmt.Println("<--- 添加信息　--->：", txid)
-	//
-	//// Org2调用channel1的链码
-	//a=[]string{"set","资产ID","======================="}
-	//txid, err = App.Set(a, 0, 1)
-	//if err != nil {
-	//	fmt.Println(err)
-	//}
-	//fmt.Println("<--- 添加信息　--->：", txid)
-	//
-	//// Org2调用channel2的链码
-	//a=[]string{"set","资产ID","-=-=-=-=-=-=-=-=-=-=-=-=-="}
-	//txid, err = App.Set(a, 1, 1)
-	//if err != nil {
-	//	fmt.Println(err)
-	//}
-	//fmt.Println("<--- 添加信息　--->：", txid)
-	//
-	//c := []string{"comm", "77"} //
-	//txid, err := App.Set(c, 0, 2)
-	//if err != nil {
-	//	fmt.Println(err)
-	//}
-	//fmt.Println("<--- 计算承诺测试　--->：", txid)
-
-
-
-
 
 
 	fmt.Println("<------------------------------------ 跨链交易　------------------------------------>")
@@ -653,8 +611,7 @@ func main() {
 	time.Sleep(time.Hour * 2400)
 }
 
-// gin.Context几乎包含了http请求中的几乎所有信息
-// 看起来gin.Context纯纯是和client交互用的，这部分代码无需改动
+// gin.Context几乎包含了http请求中的所有信息，是和client交互用的
 func test(contex *gin.Context) {
 	var requestInfo map[string]interface{}
 	body := contex.Request.Body
