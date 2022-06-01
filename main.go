@@ -517,23 +517,23 @@ func main() {
 	//time.Sleep(time.Hour * 2400)
 
 
-	//fmt.Println("<---------------监听并响应HTTP请求-------------------->")
-	//
-	//r := gin.Default() // gin.Default()返回engine对象
-	//
-	//// 处理HTTP请求的接口
-	//r.POST("/htlc/testinvoke", test) // 测试
-	//r.POST("/htlc/lock", lock) //
-	//r.POST("/htlc/withdraw", withdraw) //
-	//r.POST("/htlc/audit", audit) //
-	//r.POST("/htlc/verifytwo", verifytwo) //
-	//r.POST("/htlc/verifytwoall", verifytwoall) //
-	//
-	//r.Run(":9191") // 监听HTTP请求
-	//
-	//fmt.Println("<--------------------------------------------------->")
-	//
-	//time.Sleep(time.Hour * 2400)
+	fmt.Println("<---------------监听并响应HTTP请求-------------------->")
+	
+	r := gin.Default() // gin.Default()返回engine对象
+	
+	// 处理HTTP请求的接口
+	r.POST("/htlc/testinvoke", test) // 测试
+	r.POST("/htlc/lock", lock) //
+	r.POST("/htlc/withdraw", withdraw) //
+	r.POST("/htlc/audit", audit) //
+	r.POST("/htlc/verifytwo", verifytwo) //
+	r.POST("/htlc/verifytwoall", verifytwoall) //
+	
+	r.Run(":9191") // 监听HTTP请求
+	
+	fmt.Println("<--------------------------------------------------->")
+	
+	time.Sleep(time.Hour * 2400)
 
 
 	fmt.Println("<------------------------------------ 跨链交易　------------------------------------>")

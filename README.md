@@ -91,6 +91,16 @@
 
 ├── restart_network.sh // 用于启动各个容器的脚本
 
+├── TsClient // typescript编写的客户端脚本
+
+  ├── README.md
+
+  ├── htlc-client
+
+  ├── package-lock.json
+
+  └── run.sh
+
 └── sdkInit // fabric-go-sdk代码，用于搭建区块链网络，调用链码等
 
   ├── generateSkPk.go // 生成各组织加密用到的公私钥
@@ -108,6 +118,7 @@
 
 ## 2. 代码使用
 ### 2.1 测试代码运行
+#### 服务器
 克隆代码仓库
 ```
 git clone git@github.com:sousoul/fabric-go-sdk_htlc.git
@@ -120,15 +131,11 @@ cd fabric-go-sdk_htlc/
 ```bash
 ./restart_network.sh
 ```
-执行可执行文件，搭建区块链网络并模拟执行一笔跨链交易：
+执行可执行文件，搭建区块链网络后端：
 
 ```shell
 ./fabric-go-sdk 
 ```
-
-此外，可在另一终端执行monitordocker.sh，监听各个容器输出的日志：
-
-```
-./monitordocker.sh fixtures_test
-```
+#### 客户端
+在客户端机器上，运行TsClient目录下的脚本，完成跨链资产兑换交易。详见./TsClient/README.md。
 
