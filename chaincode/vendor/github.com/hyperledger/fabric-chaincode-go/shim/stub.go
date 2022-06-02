@@ -272,9 +272,9 @@ func (s *ChaincodeStub)ZkPutState_test(txSpeJsons string, key string) (string, e
 		token := s.Token(txSpeStruct.Pk[i], txSpeStruct.R[i])
 		//comm := s.Commitment(txSpeStruct.Value[0], txSpeStruct.R[0])
 		//token := s.Token(txSpeStruct.Pk[0], txSpeStruct.R[0])
-		//fmt.Println(fmt.Sprintf("=========组织%d=========\n" +
-		//	"Pedersen承诺：%v\n" +
-		//	"令牌Token：%v\v", i+1, comm, token))
+		fmt.Println(fmt.Sprintf("=========组织%d=========\n" +
+			"Pedersen承诺：%v\n" +
+			"令牌Token：%v\v", i+1, comm, token))
 
 		// 序列化
 		commJsons, err := json.Marshal(comm) // []byte
