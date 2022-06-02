@@ -268,10 +268,6 @@ func read_from_ledger(stub shim.ChaincodeStubInterface, args []string) (string, 
 		return "", fmt.Errorf("Protobuf Unmarshaling error: ", err)
 	}
 
-	log.Println("让我看看docker日志中有没有呢！！！！！！！！！！！！！！")
-	//log.Println("测试范围证明", string(zkrow.Columns["Apple"].Rp.))
-	//return strconv.FormatBool(zkrow.IsValidBalCor), nil
-	//return string(zkrow.Columns["Apple"].Commitment), nil
 	return string(zkrow.Columns["Org2"].Commitment), nil // 当组织名字不存在时，报错： Multiple errors occurred: - Transaction processing for endorser [peer1.org2.example.com:10051]: Chaincode status Code: (500) UNKNOWN. Description: error in simulation: failed to execute transaction 60e3e0c44c54c8be3bcc5733903044f03f67425dd74d015c6cbfd77bdb2479b9: error sending: chaincode stream terminated - Transaction processing for endorser [peer1.org1.example.com:9051]: Chaincode status Code: (500) UNKNOWN. Description: error in simulation: failed to execute transaction 60e3e0c44c54c8be3bcc5733903044f03f67425dd74d015c6cbfd77bdb2479b9: error sending: chaincode stream terminated
 }
 

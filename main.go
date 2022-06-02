@@ -608,6 +608,13 @@ func main() {
 	//}
 	//fmt.Println("<--- 测试密码学原语空间开销　--->：", ret)
 
+	args = []string{"read_from_ledger", "1"}
+	ret, err = App.Set(args, 1, 1)
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println("<--- 读取账本函数内容　--->：", ret)
+
 	time.Sleep(time.Hour * 2400)
 }
 
