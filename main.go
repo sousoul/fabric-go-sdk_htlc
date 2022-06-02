@@ -460,15 +460,12 @@ func main() {
 
 	args := []string{"read_from_ledger", "二维账本第一行"}
 	ret, err := App.Set(args, 1, 1)
-	//response, err = App.Get(e) 到底是用set还是用get
 	if err != nil {
 		fmt.Println(err)
 	}
 	fmt.Println("<--- 读取账本函数read_from_ledger测试　--->：", ret)
 
 	// 初始化余额
-	//asset1 := [2]int64 {100, 100} // 初始化数组长度只能用常量
-	//asset2 := [2]int64 {200, 200}
 	asset1 := []int64{}
 	for i:=0;i<orgNum;i++{
 		asset1 = append(asset1, 10000000) // 所有组织在链1上的初始资产均为1000
@@ -539,45 +536,6 @@ func main() {
 	//
 	//time.Sleep(time.Hour * 2400)
 
-
-
-
-	// Org2调用channel1的链码
-	//a:=[]string{"set","资产ID","---------------------"}
-	//txid, err := App.Set(a, 0, 1)
-	//if err != nil {
-	//	fmt.Println(err)
-	//}
-	//fmt.Println("<--- 添加信息　--->：", txid)
-	//
-	//// Org2调用channel1的链码
-	//a=[]string{"set","资产ID","======================="}
-	//txid, err = App.Set(a, 0, 1)
-	//if err != nil {
-	//	fmt.Println(err)
-	//}
-	//fmt.Println("<--- 添加信息　--->：", txid)
-	//
-	//// Org2调用channel2的链码
-	//a=[]string{"set","资产ID","-=-=-=-=-=-=-=-=-=-=-=-=-="}
-	//txid, err = App.Set(a, 1, 1)
-	//if err != nil {
-	//	fmt.Println(err)
-	//}
-	//fmt.Println("<--- 添加信息　--->：", txid)
-	//
-	//c := []string{"comm", "77"} //
-	//txid, err := App.Set(c, 0, 2)
-	//if err != nil {
-	//	fmt.Println(err)
-	//}
-	//fmt.Println("<--- 计算承诺测试　--->：", txid)
-
-
-
-
-
-
 	fmt.Println("<------------------------------------ 跨链交易　------------------------------------>")
 	// 哈西时间锁参数
 	var T1 int64 = 10 // 时间锁1，单位秒
@@ -643,7 +601,6 @@ func main() {
 
 	fmt.Println("两条链上的范围证明、析取证明均验证通过，跨链交易通过监管")
 	fmt.Println("<------------------------------------ 结束　------------------------------------>")
-	// asset两个数组也需要更新吧
 
 	//args = []string{"testsize", txKey}
 	//ret, err = App.Set(args, 0, 1)
@@ -651,6 +608,13 @@ func main() {
 	//	fmt.Println(err)
 	//}
 	//fmt.Println("<--- 测试密码学原语空间开销　--->：", ret)
+
+	args = []string{"read_from_ledger", "1"}
+	ret, err = App.Set(args, 1, 1)
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println("<--- 读取账本内容测试　--->：", ret)
 
 	time.Sleep(time.Hour * 2400)
 }
