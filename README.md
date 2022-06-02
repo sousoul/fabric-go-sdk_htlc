@@ -119,5 +119,4 @@
 ```
 ./monitordocker.sh fixtures_test > log.txt
 ```
-### 2.2 增添网络组织数
 
