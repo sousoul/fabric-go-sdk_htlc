@@ -129,6 +129,6 @@ cd fabric-go-sdk_htlc/
 此外，可在另一终端执行monitordocker.sh，监听各个容器输出的日志：
 
 ```
-./monitordocker.sh fixtures_test
+./monitordocker.sh fixtures_test > log.txt
 ```
 
