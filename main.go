@@ -297,6 +297,7 @@ type PrivateLedger struct {
 var privateLedger = PrivateLedger{}
 
 func main() {
+	fmt.Println("<------------------------------------ 基于区块链的可信交易构件　------------------------------------>")
 	//log.SetFlags(log.Ldate |log.Ltime |log.Lmicroseconds)
 	// init orgs information
 	orgs := []*sdkInit.OrgInfo{
