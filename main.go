@@ -617,7 +617,7 @@ func main() {
 	}
 	fmt.Println("<--- 读取账本内容测试　--->：", ret)
 
-	time.Sleep(time.Hour * 2400)
+	//time.Sleep(time.Hour * 2400)
 }
 
 // gin.Context几乎包含了http请求中的几乎所有信息
